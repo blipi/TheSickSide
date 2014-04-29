@@ -1,0 +1,95 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 8, ../sass/ie.scss */
+#outer_border {
+  border: 0px;
+  top: 60px;
+  left: 40%;
+}
+
+/* line 16, ../sass/ie.scss */
+#inner_circle,
+#inner_border {
+  behavior: url(pie/PIE.htc);
+}
+
+/* line 21, ../sass/ie.scss */
+#name_header {
+  left: 90px;
+}
+
+/* line 26, ../sass/ie.scss */
+#name_footer {
+  left: 20px;
+  top: 280px;
+}
+
+/* line 32, ../sass/ie.scss */
+.menu_news {
+  top: -20px;
+  left: -110px;
+}
+
+/* line 38, ../sass/ie.scss */
+.menu_concerts {
+  left: -160px;
+  top: 42px;
+}
+
+/* line 44, ../sass/ie.scss */
+.menu_discography {
+  left: -170px;
+  top: 105px;
+}
+
+/* line 50, ../sass/ie.scss */
+.menu_media {
+  left: 265px;
+  top: -105px;
+}
+
+/* line 56, ../sass/ie.scss */
+.menu_biography {
+  left: 285px;
+  top: -43px;
+}
+
+/* line 62, ../sass/ie.scss */
+.menu_contact {
+  left: 260px;
+  top: 20px;
+}
+
+/* line 68, ../sass/ie.scss */
+.media_player {
+  top: 3px;
+}
+
+/* line 73, ../sass/ie.scss */
+#play {
+  background-image: url(../images/play.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../sass/ie.scss */
+#pause {
+  background-image: url(../images/pause.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 87, ../sass/ie.scss */
+#stop {
+  background-image: url(../images/stop.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 94, ../sass/ie.scss */
+.ui-slider-handle {
+  top: -3px;
+}

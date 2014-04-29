@@ -1,0 +1,96 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+#outer_border
+{
+	border: 0px;
+	top: 60px;
+	left: 40%;
+}
+
+#inner_circle,
+#inner_border
+{
+	behavior: url(pie/PIE.htc);
+}
+
+#name_header
+{
+	left: 90px;
+}
+
+#name_footer
+{
+	left: 20px;
+	top: 280px;
+}
+
+.menu_news
+{
+	top: -20px;
+	left: -110px;
+}
+
+.menu_concerts
+{
+	left: -160px;
+	top: 42px;
+}
+
+.menu_discography
+{
+	left: -170px;
+	top: 105px;
+}
+
+.menu_media
+{
+	left: 265px;
+	top: -105px;
+}
+
+.menu_biography
+{
+	left: 285px;
+	top: -43px;
+}
+
+.menu_contact
+{
+	left: 260px;
+	top: 20px;
+}
+
+.media_player
+{
+	top: 3px;
+}
+
+#play
+{
+	background-image: url(../images/play.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#pause
+{
+	background-image: url(../images/pause.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#stop
+{
+	background-image: url(../images/stop.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ui-slider-handle
+{
+	top: -3px;
+}

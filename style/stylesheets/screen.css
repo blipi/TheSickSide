@@ -1,0 +1,1001 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+li:before
+{
+  content:" • ";  
+  color: white;
+}
+
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+  src: url("../fonts/tradegothicltstd-bdcn20.eot");
+  src: url("../fonts/tradegothicltstd-bdcn20.eot") format("embedded-opentype"), url("../fonts/tradegothicltstd-bdcn20.woff") format("woff"), url("../fonts/tradegothicltstd-bdcn20.ttf") format("truetype"), url("../fonts/tradegothicltstd-bdcn20.svg#TradeGothicLTStdBoldCondensedNo.20") format("svg");
+}
+
+/* line 28, ../sass/screen.scss */
+body {
+  color: #FFF;
+  background-color: #000000;
+  /*background-image: url(../background.png);*/
+  background-size: 100% auto;
+  background-position: center;
+}
+
+a,
+a:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+	
+#languageBar
+{
+	position: absolute;
+	width: 105px;
+	height: 25px;
+	right: 0px;
+	top: 9px;
+}
+
+#languageBar img
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#languageBar img:hover
+{
+	cursor: pointer;
+	width: 25px;
+}
+
+/* line 36, ../sass/screen.scss */
+#menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+#menu a:link {text-decoration: none}
+#menu a:visited {text-decoration: none; -webkit-text-stroke: 1px black; }
+#menu a:active {text-decoration: none}
+
+/* line 42, ../sass/screen.scss */
+#menu_line {
+  position: absolute;
+  top: 175px;
+  width: 100%;
+  height: 40px;
+  background-color: #ff4200;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/* line 53, ../sass/screen.scss */
+#outer_border {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 20px;
+  margin: auto;
+  width: 275px;
+  height: 275px;
+  border: 42px solid black;
+  border-radius: 50%;
+}
+
+/* line 66, ../sass/screen.scss */
+#inner_circle {
+  position: relative;
+  top: -40px;
+  left: -40px;
+  width: 275px;
+  height: 275px;
+  border: 40px solid #ff4200;
+  border-radius: 50%;
+}
+
+/* line 77, ../sass/screen.scss */
+#inner_border {
+  position: relative;
+  top: -1px;
+  left: -1px;
+  width: 273px;
+  height: 273px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+/* line 88, ../sass/screen.scss */
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 175px;
+}
+
+/* line 97, ../sass/screen.scss */
+#name_header span,
+#name_footer span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 187.5px;
+  width: 20px;
+  color: black;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 110, ../sass/screen.scss */
+#name_header span {
+  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+}
+
+/* line 117, ../sass/screen.scss */
+#name_footer span {
+  padding-top: 155px;
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 125, ../sass/screen.scss */
+#name_header {
+  position: relative;
+  top: -33px;
+  left: 130px;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char1 {
+  transform: rotate(-10.75deg);
+  -webkit-transform: rotate(-10.75deg);
+  -moz-transform: rotate(-10.75deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char2 {
+  transform: rotate(-7.5deg);
+  -webkit-transform: rotate(-7.5deg);
+  -moz-transform: rotate(-7.5deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char3 {
+  transform: rotate(-4.25deg);
+  -webkit-transform: rotate(-4.25deg);
+  -moz-transform: rotate(-4.25deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char4 {
+  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char5 {
+  transform: rotate(2.25deg);
+  -webkit-transform: rotate(2.25deg);
+  -moz-transform: rotate(2.25deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char6 {
+  transform: rotate(5.5deg);
+  -webkit-transform: rotate(5.5deg);
+  -moz-transform: rotate(5.5deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char7 {
+  transform: rotate(8.75deg);
+  -webkit-transform: rotate(8.75deg);
+  -moz-transform: rotate(8.75deg);
+}
+/* line 140, ../sass/screen.scss */
+#name_header .char8 {
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+}
+
+/* line 149, ../sass/screen.scss */
+#name_footer {
+  position: relative;
+  top: 127px;
+  left: 130px;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 164, ../sass/screen.scss */
+#name_footer .char1 {
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+}
+/* line 164, ../sass/screen.scss */
+#name_footer .char2 {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+}
+/* line 164, ../sass/screen.scss */
+#name_footer .char3 {
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+}
+/* line 164, ../sass/screen.scss */
+#name_footer .char4 {
+  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+}
+
+/* line 173, ../sass/screen.scss */
+#menu {
+  position: relative;
+  top: -300px;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+}
+
+/* line 183, ../sass/screen.scss */
+h1,
+.menu_item {
+  position: relative;
+  display: block;
+  font-family: 'TradeGothic';
+  font-size: 28px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-decoration: none;
+}
+
+/* line 203, ../sass/screen.scss */
+.menu_news {
+  left: -90px;
+  top: 10px;
+  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotate(25deg);
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 217, ../sass/screen.scss */
+.menu_concerts {
+  left: -125px;
+  top: 38px;
+}
+
+/* line 223, ../sass/screen.scss */
+.menu_discography {
+  left: -140px;
+  top: 85px;
+  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 237, ../sass/screen.scss */
+.menu_media {
+  left: 255px;
+  top: -150px;
+  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 251, ../sass/screen.scss */
+.menu_biography {
+  left: 290px;
+  top: -45px;
+}
+
+/* line 257, ../sass/screen.scss */
+.menu_contact {
+  left: 270px;
+  top: 60px;
+  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 270, ../sass/screen.scss */
+div.graph {
+  height: 50px;
+}
+
+/* line 275, ../sass/screen.scss */
+div.graph div.sound_bar,
+div.graph div.sound2_bar {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  width: 10px;
+  height: 50px;
+  /* We'll override this later */
+  background-color: white;
+  border: 2px solid black;
+  margin-right: 2px;
+  top: 100%;
+}
+
+/* line 288, ../sass/screen.scss */
+#byte {
+  position: absolute;
+  left: 137px;
+  top: 137px;
+  width: 400px;
+}
+
+/* line 296, ../sass/screen.scss */
+#byte2 {
+  position: absolute;
+  left: 137px;
+  top: 137px;
+  width: 400px;
+}
+
+/* line 304, ../sass/screen.scss */
+.sound_wrapper {
+  position: relative;
+  height: 179px;
+  display: block;
+  float: left;
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+}
+
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper1 {
+  transform: rotate(115.3125deg);
+  -webkit-transform: rotate(115.3125deg);
+  -moz-transform: rotate(115.3125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper2 {
+  transform: rotate(110.625deg);
+  -webkit-transform: rotate(110.625deg);
+  -moz-transform: rotate(110.625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper3 {
+  transform: rotate(105.9375deg);
+  -webkit-transform: rotate(105.9375deg);
+  -moz-transform: rotate(105.9375deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper4 {
+  transform: rotate(101.25deg);
+  -webkit-transform: rotate(101.25deg);
+  -moz-transform: rotate(101.25deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper5 {
+  transform: rotate(96.5625deg);
+  -webkit-transform: rotate(96.5625deg);
+  -moz-transform: rotate(96.5625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper6 {
+  transform: rotate(91.875deg);
+  -webkit-transform: rotate(91.875deg);
+  -moz-transform: rotate(91.875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper7 {
+  transform: rotate(87.1875deg);
+  -webkit-transform: rotate(87.1875deg);
+  -moz-transform: rotate(87.1875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper8 {
+  transform: rotate(82.5deg);
+  -webkit-transform: rotate(82.5deg);
+  -moz-transform: rotate(82.5deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper9 {
+  transform: rotate(77.8125deg);
+  -webkit-transform: rotate(77.8125deg);
+  -moz-transform: rotate(77.8125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper10 {
+  transform: rotate(73.125deg);
+  -webkit-transform: rotate(73.125deg);
+  -moz-transform: rotate(73.125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper11 {
+  transform: rotate(68.4375deg);
+  -webkit-transform: rotate(68.4375deg);
+  -moz-transform: rotate(68.4375deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper12 {
+  transform: rotate(63.75deg);
+  -webkit-transform: rotate(63.75deg);
+  -moz-transform: rotate(63.75deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper13 {
+  transform: rotate(59.0625deg);
+  -webkit-transform: rotate(59.0625deg);
+  -moz-transform: rotate(59.0625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper14 {
+  transform: rotate(54.375deg);
+  -webkit-transform: rotate(54.375deg);
+  -moz-transform: rotate(54.375deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper15 {
+  transform: rotate(49.6875deg);
+  -webkit-transform: rotate(49.6875deg);
+  -moz-transform: rotate(49.6875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper16 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper17 {
+  transform: rotate(40.3125deg);
+  -webkit-transform: rotate(40.3125deg);
+  -moz-transform: rotate(40.3125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper18 {
+  transform: rotate(35.625deg);
+  -webkit-transform: rotate(35.625deg);
+  -moz-transform: rotate(35.625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper19 {
+  transform: rotate(30.9375deg);
+  -webkit-transform: rotate(30.9375deg);
+  -moz-transform: rotate(30.9375deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper20 {
+  transform: rotate(26.25deg);
+  -webkit-transform: rotate(26.25deg);
+  -moz-transform: rotate(26.25deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper21 {
+  transform: rotate(21.5625deg);
+  -webkit-transform: rotate(21.5625deg);
+  -moz-transform: rotate(21.5625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper22 {
+  transform: rotate(16.875deg);
+  -webkit-transform: rotate(16.875deg);
+  -moz-transform: rotate(16.875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper23 {
+  transform: rotate(12.1875deg);
+  -webkit-transform: rotate(12.1875deg);
+  -moz-transform: rotate(12.1875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper24 {
+  transform: rotate(7.5deg);
+  -webkit-transform: rotate(7.5deg);
+  -moz-transform: rotate(7.5deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper25 {
+  transform: rotate(2.8125deg);
+  -webkit-transform: rotate(2.8125deg);
+  -moz-transform: rotate(2.8125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper26 {
+  transform: rotate(-1.875deg);
+  -webkit-transform: rotate(-1.875deg);
+  -moz-transform: rotate(-1.875deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper27 {
+  transform: rotate(-6.5625deg);
+  -webkit-transform: rotate(-6.5625deg);
+  -moz-transform: rotate(-6.5625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper28 {
+  transform: rotate(-11.25deg);
+  -webkit-transform: rotate(-11.25deg);
+  -moz-transform: rotate(-11.25deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper29 {
+  transform: rotate(-15.9375deg);
+  -webkit-transform: rotate(-15.9375deg);
+  -moz-transform: rotate(-15.9375deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper30 {
+  transform: rotate(-20.625deg);
+  -webkit-transform: rotate(-20.625deg);
+  -moz-transform: rotate(-20.625deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper31 {
+  transform: rotate(-25.3125deg);
+  -webkit-transform: rotate(-25.3125deg);
+  -moz-transform: rotate(-25.3125deg);
+}
+/* line 325, ../sass/screen.scss */
+#byte #sound_wrapper32 {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper1 {
+  transform: rotate(-110.3125deg);
+  -webkit-transform: rotate(-110.3125deg);
+  -moz-transform: rotate(-110.3125deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper2 {
+  transform: rotate(-105.625deg);
+  -webkit-transform: rotate(-105.625deg);
+  -moz-transform: rotate(-105.625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper3 {
+  transform: rotate(-100.9375deg);
+  -webkit-transform: rotate(-100.9375deg);
+  -moz-transform: rotate(-100.9375deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper4 {
+  transform: rotate(-96.25deg);
+  -webkit-transform: rotate(-96.25deg);
+  -moz-transform: rotate(-96.25deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper5 {
+  transform: rotate(-91.5625deg);
+  -webkit-transform: rotate(-91.5625deg);
+  -moz-transform: rotate(-91.5625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper6 {
+  transform: rotate(-86.875deg);
+  -webkit-transform: rotate(-86.875deg);
+  -moz-transform: rotate(-86.875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper7 {
+  transform: rotate(-82.1875deg);
+  -webkit-transform: rotate(-82.1875deg);
+  -moz-transform: rotate(-82.1875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper8 {
+  transform: rotate(-77.5deg);
+  -webkit-transform: rotate(-77.5deg);
+  -moz-transform: rotate(-77.5deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper9 {
+  transform: rotate(-72.8125deg);
+  -webkit-transform: rotate(-72.8125deg);
+  -moz-transform: rotate(-72.8125deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper10 {
+  transform: rotate(-68.125deg);
+  -webkit-transform: rotate(-68.125deg);
+  -moz-transform: rotate(-68.125deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper11 {
+  transform: rotate(-63.4375deg);
+  -webkit-transform: rotate(-63.4375deg);
+  -moz-transform: rotate(-63.4375deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper12 {
+  transform: rotate(-58.75deg);
+  -webkit-transform: rotate(-58.75deg);
+  -moz-transform: rotate(-58.75deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper13 {
+  transform: rotate(-54.0625deg);
+  -webkit-transform: rotate(-54.0625deg);
+  -moz-transform: rotate(-54.0625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper14 {
+  transform: rotate(-49.375deg);
+  -webkit-transform: rotate(-49.375deg);
+  -moz-transform: rotate(-49.375deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper15 {
+  transform: rotate(-44.6875deg);
+  -webkit-transform: rotate(-44.6875deg);
+  -moz-transform: rotate(-44.6875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper16 {
+  transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper17 {
+  transform: rotate(-35.3125deg);
+  -webkit-transform: rotate(-35.3125deg);
+  -moz-transform: rotate(-35.3125deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper18 {
+  transform: rotate(-30.625deg);
+  -webkit-transform: rotate(-30.625deg);
+  -moz-transform: rotate(-30.625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper19 {
+  transform: rotate(-25.9375deg);
+  -webkit-transform: rotate(-25.9375deg);
+  -moz-transform: rotate(-25.9375deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper20 {
+  transform: rotate(-21.25deg);
+  -webkit-transform: rotate(-21.25deg);
+  -moz-transform: rotate(-21.25deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper21 {
+  transform: rotate(-16.5625deg);
+  -webkit-transform: rotate(-16.5625deg);
+  -moz-transform: rotate(-16.5625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper22 {
+  transform: rotate(-11.875deg);
+  -webkit-transform: rotate(-11.875deg);
+  -moz-transform: rotate(-11.875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper23 {
+  transform: rotate(-7.1875deg);
+  -webkit-transform: rotate(-7.1875deg);
+  -moz-transform: rotate(-7.1875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper24 {
+  transform: rotate(-2.5deg);
+  -webkit-transform: rotate(-2.5deg);
+  -moz-transform: rotate(-2.5deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper25 {
+  transform: rotate(2.1875deg);
+  -webkit-transform: rotate(2.1875deg);
+  -moz-transform: rotate(2.1875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper26 {
+  transform: rotate(6.875deg);
+  -webkit-transform: rotate(6.875deg);
+  -moz-transform: rotate(6.875deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper27 {
+  transform: rotate(11.5625deg);
+  -webkit-transform: rotate(11.5625deg);
+  -moz-transform: rotate(11.5625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper28 {
+  transform: rotate(16.25deg);
+  -webkit-transform: rotate(16.25deg);
+  -moz-transform: rotate(16.25deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper29 {
+  transform: rotate(20.9375deg);
+  -webkit-transform: rotate(20.9375deg);
+  -moz-transform: rotate(20.9375deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper30 {
+  transform: rotate(25.625deg);
+  -webkit-transform: rotate(25.625deg);
+  -moz-transform: rotate(25.625deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper31 {
+  transform: rotate(30.3125deg);
+  -webkit-transform: rotate(30.3125deg);
+  -moz-transform: rotate(30.3125deg);
+}
+/* line 343, ../sass/screen.scss */
+#byte2 #sound2_wrapper32 {
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+}
+
+/* line 352, ../sass/screen.scss */
+.media_player {
+  position: relative;
+  top: 5px;
+}
+
+/* line 357, ../sass/screen.scss */
+#play, #pause, #stop {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+  margin-right: -15px;
+}
+
+/* line 370, ../sass/screen.scss */
+#play:hover, #pause:hover, #stop:hover {
+  background-color: #333333;
+}
+
+/* line 375, ../sass/screen.scss */
+#loader:before,
+#play:before {
+  width: 0;
+  height: 0;
+  border-left: 10px solid black;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 12px;
+}
+
+/* line 389, ../sass/screen.scss */
+#pause {
+  display: none;
+}
+
+/* line 393, ../sass/screen.scss */
+#pause:before {
+  width: 3px;
+  height: 15px;
+  background: black;
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 17px;
+}
+
+/* line 403, ../sass/screen.scss */
+#pause:after {
+  width: 3px;
+  height: 15px;
+  background: black;
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 17px;
+}
+
+/* line 413, ../sass/screen.scss */
+#stop:after {
+  width: 13px;
+  height: 13px;
+  background: black;
+  position: absolute;
+  content: "";
+  top: 9px;
+  right: 9px;
+}
+
+/* line 424, ../sass/screen.scss */
+#loader {
+  position: absolute;
+  display: none;
+  height: 30px;
+  width: 0px;
+  left: 20px;
+  background: #009e07;
+  border-radius: 20px;
+}
+
+/* line 434, ../sass/screen.scss */
+.ui-slider {
+  width: 100px;
+  height: 15px;
+  position: relative;
+  top: -1px;
+  left: -40px;
+  margin: 10px 0;
+  background: #FFFFFF;
+  float: right;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+  -moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+}
+
+/* line 453, ../sass/screen.scss */
+.ui-slider:after {
+  width: 90px;
+  height: 2px;
+  background: #ff7e00;
+  position: absolute;
+  content: "";
+  top: 6.5px;
+  right: 5px;
+}
+
+/* line 464, ../sass/screen.scss */
+.ui-slider-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: #ff4200;
+  top: 1.5px;
+  left: 100%;
+  margin-left: -5px;
+}
+
+#content
+{
+	position: absolute;
+	top: 460px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 950px;
+	word-break: break-word;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+#content h2
+{
+	font-family: 'TradeGothic';
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+#content article
+{
+	margin-left: 15px;
+	font-size: 17px;
+}
+
+#fade
+{
+	position: fixed;
+	z-index: 2;
+	display: none;
+	opacity: 0;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) !important;
+	background: #000000;
+}
+
+#fade_loading
+{
+	position: absolute;
+	margin: auto auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 150px;
+	height: 150px;
+	background: url('../images/loading.gif') #FFFFFF;
+	border-radius: 15px;
+	border: 5px solid #000;
+}

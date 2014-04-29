@@ -1,0 +1,60 @@
+<head>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lettering.js"></script>
+	<script type="text/javascript" src="js/jquery.reject.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	
+	<script type="text/javascript" src="js/Site.js"></script>
+	<script type="text/javascript" src="js/Menu.js"></script>
+	<script type="text/javascript" src="js/Router.js"></script>
+	
+	<script type="text/javascript" src="js/libs/soundmanager2.js"></script>
+	
+	<script type="text/javascript" src="js/libs/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/Sound.js"></script>
+	
+	<link href="style/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+	<!--[if lte IE 8]>
+ 		<link href="style/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="style/stylesheets/jreject.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ 	<![endif]-->
+</head>
+
+<body>
+	<div id="menu_line">
+		<div class="media_player">
+			<div id="play"></div>
+			<div id="loader"></div>
+			<div id="pause" onclick="Site.pauseSound();"></div>
+			<div id="stop" onclick="Site.stopSound();"></div>
+			
+			<div id="slider"></div>
+		</div>	
+	</div>
+	
+	<div id="outer_border">
+		<div id="inner_circle">		
+			<div id="inner_border">
+				<span id="name_header">The Sick</span>
+				<span id="name_footer">Side</span>
+			</div>
+		</div>
+	
+		<div id="byte" class="graph"></div>
+		<div id="byte2" class="graph"></div>
+		
+		<div id="menu">
+			<div class="menu_item menu_news"><a href="{$base_url}news/">NOTICIES</a></div>
+			<div class="menu_item menu_concerts"><a href="{$base_url}concerts/">CONCERTS</a></div>
+			<div class="menu_item menu_discography"><a href="{$base_url}discography/">DISCOGRAFIA</a></div>
+			
+			<div class="menu_item menu_media"><a href="{$base_url}media/">MEDIA</a></div>
+			<div class="menu_item menu_biography"><a href="{$base_url}biography/">BIOGRAFIA</a></div>
+			<div class="menu_item menu_contact" ><a href="{$base_url}contact/">CONTACTA'NS</a></div>
+		</div>
+				
+		<img id="logo" src="style/images/vinyl.png" />
+	</div>
+</body>

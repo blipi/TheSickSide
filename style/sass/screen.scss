@@ -1,0 +1,475 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+    font-family: 'TradeGothic';
+    src: url('../fonts/tradegothicltstd-bdcn20.eot');
+    src: url('../fonts/tradegothicltstd-bdcn20.eot') format('embedded-opentype'),
+         url('../fonts/tradegothicltstd-bdcn20.woff') format('woff'),
+         url('../fonts/tradegothicltstd-bdcn20.ttf') format('truetype'),
+         url('../fonts/tradegothicltstd-bdcn20.svg#TradeGothicLTStdBoldCondensedNo.20') format('svg');
+}
+
+$main_color: #FF4200;
+$border_color: #000000;
+$menu_color: #FFFFFF;
+$group_color: #000000;
+
+$bars_color: #FFFFFF;
+$bars_border: #000000;
+
+$progress_from: #FF7e00;
+
+body
+{
+	background-color: #000000;
+	background-image: url(../background.png);
+	background-size: 100% auto;
+	background-position: center;
+}
+
+#menu a
+{
+	color: $menu_color;
+	text-decoration: none;
+}
+
+#menu_line
+{
+	position: absolute;
+	top: 175px;
+	width: 100%;
+	height: 40px;
+	background-color: $main_color;
+	border-top: 2px solid $border_color;
+	border-bottom: 2px solid $border_color;
+}
+
+#outer_border
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 20px;
+	margin: auto;
+	width: 275px;
+	height: 275px;
+	border: 42px solid $border_color;
+	border-radius: 50%;
+}
+
+#inner_circle
+{
+	position: relative;
+	top: -40px;
+	left: -40px;
+	width: 275px;
+	height: 275px;
+	border: 40px solid $main_color;
+	border-radius: 50%;
+}
+
+#inner_border
+{
+	position: relative;
+	top: -1px;
+	left: -1px;
+	width: 273px;
+	height: 273px;
+	border: 2px solid $border_color;
+	border-radius: 50%;
+}
+
+#logo
+{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 175px;
+}
+
+#name_header span,
+#name_footer span
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: ((335+40)/2)+px;
+	width: 20px;
+	color: $group_color;
+	text-align: center;
+	
+	-webkit-backface-visibility: hidden;
+}
+
+#name_header span
+{
+	transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
+	-moz-transform-origin: bottom center;
+}
+
+#name_footer span
+{
+	padding-top: 155px;      		
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+#name_header
+{
+	position: relative; 
+	top: -33px; 
+	left: 130px;
+	font-size: 25px; 
+	font-weight: bold;
+		
+	$num-letters: 8;
+	$angle-span: 26deg;
+	$angle-offset: -14;
+	
+  	$angle-per-char: $angle-span / $num-letters;
+  	@for $i from 1 through $num-letters
+  	{
+    	.char#{$i}
+    	{
+    		transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-webkit-transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-moz-transform: rotate(($angle-offset + $angle-per-char * $i));
+      	}
+	}
+}
+
+#name_footer
+{
+	position: relative; 
+	top: 127px; 
+	left: 130px;
+	font-size: 25px; 
+	font-weight: bold;
+	
+	$num-letters: 4;
+	$angle-span: 12deg;
+	$angle-offset: -6deg;
+	
+  	$angle-per-char: $angle-span / $num-letters;
+  	@for $i from 1 through $num-letters
+  	{
+    	.char#{$i}
+    	{
+    		transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-webkit-transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-moz-transform: rotate(($angle-offset + $angle-per-char * $i));
+      	}
+	}
+}
+
+#menu
+{
+	position: relative;
+	top: -300px;
+
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+}
+
+.menu_item
+{
+	position: relative;
+	display: block;
+	
+	font-family: 'TradeGothic';
+	font-size: 28px;
+	color: #FFFFFF;
+	
+	-webkit-text-stroke: 1px black;
+   	text-shadow:
+       	3px 3px 0 #000,
+     	-1px -1px 0 #000,  
+      	1px -1px 0 #000,
+      	-1px 1px 0 #000,
+       	1px 1px 0 #000;
+    
+    text-decoration: none;
+}
+
+.menu_news
+{
+	left: -90px;
+	top: 10px;
+	
+	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	-moz-transform: rotate(25deg);
+
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+.menu_concerts
+{
+	left: -125px;
+	top: 38px;
+}
+
+.menu_discography
+{
+	left: -140px;
+	top: 85px;
+	
+	transform: rotate(-25deg);
+	-webkit-transform: rotate(-25deg);
+	-moz-transform: rotate(-25deg);
+
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+.menu_media
+{
+	left: 255px;
+	top: -150px;
+	
+	transform: rotate(-25deg);
+	-webkit-transform: rotate(-25deg);
+	-moz-transform: rotate(-25deg);
+
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+.menu_biography
+{
+	left: 290px;
+	top: -45px;
+}
+
+.menu_contact
+{
+	left: 270px;
+	top: 60px;
+	
+	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	-moz-transform: rotate(25deg);
+
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+div.graph {
+	height:50px;
+}
+
+div.graph div.sound_bar,
+div.graph div.sound2_bar {
+	display: inline-block;
+	position: absolute;
+	vertical-align: top;
+    width: 10px;
+    height: 50px;   /* We'll override this later */
+    background-color: $bars_color;
+    border: 2px solid $bars_border;
+    margin-right: 2px;
+    top: 100%
+}
+
+#byte
+{
+	position: absolute;
+	left: 137px;
+	top: 137px;
+	width: 400px;
+}
+
+#byte2
+{
+	position: absolute;
+	left: 137px;
+	top: 137px;
+	width: 400px;
+}
+
+.sound_wrapper
+{
+	position: relative;
+	height: ((275+83)/2)+px;
+	display: block;
+	float: left;
+	
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+}
+
+#byte
+{	
+	$num-letters: 32;
+	$angle-span: -150deg;
+	$angle-offset: 120deg;
+	
+  	$angle-per-char: $angle-span / $num-letters;
+  	@for $i from 1 through $num-letters
+  	{
+    	#sound_wrapper#{$i}
+    	{
+    		transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-webkit-transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-moz-transform: rotate(($angle-offset + $angle-per-char * $i));
+      	}
+	}
+}
+
+#byte2
+{	
+	$num-letters: 32;
+	$angle-span: 150deg;
+	$angle-offset: -115deg;
+	
+  	$angle-per-char: $angle-span / $num-letters;
+  	@for $i from 1 through $num-letters
+  	{
+    	#sound2_wrapper#{$i}
+    	{
+    		transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-webkit-transform: rotate(($angle-offset + $angle-per-char * $i));
+      		-moz-transform: rotate(($angle-offset + $angle-per-char * $i));
+      	}
+	}
+}
+
+.media_player
+{
+	position: relative;
+	top: 5px;
+}
+
+#play, #pause, #stop {
+   width:30px;
+   height: 30px;
+   background: white;
+   position: relative;
+   display: block;
+   border-radius: 50%;
+   float: left;
+   margin-left: 20px;
+   margin-right: -15px;
+}
+
+#play:hover, #pause:hover, #stop:hover
+{
+	background-color: #333333;
+}
+
+#loader:before,
+#play:before {
+    width: 0;        
+    height: 0;
+    border-left: 10px solid black;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 12px;
+}
+
+#pause
+{
+	display: none;
+}
+ 
+#pause:before {
+    width: 3px;        
+    height: 15px;
+    background: black;
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 17px;
+}
+ 
+#pause:after {
+    width: 3px;        
+    height: 15px;
+    background: black;
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 17px;
+}
+ 
+#stop:after {
+    width: 13px;        
+    height: 13px;
+    background: black;
+    position: absolute;
+    content: "";
+    top: 9px;
+    right: 9px;
+}
+
+#loader
+{
+	position: absolute;
+	height: 30px;
+	width: 0px;
+	left: 20px;
+	background: #009e07;
+	border-radius: 20px;
+}
+
+.ui-slider 
+{
+	width: 100px;
+	height: 15px;
+	position: relative;
+	top: -1px;
+	left: -40px;
+	margin: 10px 0;
+	background: #FFFFFF;
+	float: right;
+	
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	
+	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+	-moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+	box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+}
+ 
+.ui-slider:after {
+    width: 90px;        
+    height: 2px;
+    background: $progress_from;
+    position: absolute;
+    content: "";
+    top: 6.5px;
+    right: 5px;
+}
+
+.ui-slider-handle
+{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	background-color: $main_color;
+	top: 1.5px;
+	left: 100%;
+	margin-left: -5px;
+}
+

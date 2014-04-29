@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="745"
+   height="745"
+   id="svg1">
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient542">
+      <stop
+         style="stop-color:#0e1e5f;stop-opacity:1"
+         offset="0"
+         id="stop543" />
+      <stop
+         style="stop-color:#0f4f76;stop-opacity:1"
+         offset="0.35058498"
+         id="stop770" />
+      <stop
+         style="stop-color:#2979aa;stop-opacity:1"
+         offset="0.84552848"
+         id="stop544" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop545" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient452">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.09411765"
+         offset="0"
+         id="stop453" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.27058825"
+         offset="0.14634146"
+         id="stop917" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop454" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient220">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop221" />
+      <stop
+         style="stop-color:#efefef;stop-opacity:1"
+         offset="0.84552848"
+         id="stop224" />
+      <stop
+         style="stop-color:#a2a2a2;stop-opacity:1"
+         offset="1"
+         id="stop222" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient216">
+      <stop
+         style="stop-color:#505050;stop-opacity:1"
+         offset="0"
+         id="stop217" />
+      <stop
+         style="stop-color:#bfbfbf;stop-opacity:1"
+         offset="1"
+         id="stop218" />
+    </linearGradient>
+    <linearGradient
+       x1="296.42935"
+       y1="671.05518"
+       x2="296.37903"
+       y2="657.97278"
+       id="linearGradient921"
+       xlink:href="#linearGradient216"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(20.61913,0,0,13.42566,-5850.081,-8590.833)" />
+    <linearGradient
+       x1="285.51788"
+       y1="683.88354"
+       x2="285.31543"
+       y2="714.64282"
+       id="linearGradient922"
+       xlink:href="#linearGradient220"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(21.86298,0,0,12.66184,-5850.081,-8590.833)" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       transform="matrix(1.047979,0,0,1.047979,-36.183605,90.922193)"
+       id="g1357">
+      <path
+         d="M 139.62208,74.481324 C 139.6219,74.48115 46.51991,351.23788 48.632622,408.28265 C 50.745479,465.32747 107.90575,462.87632 107.90575,462.87632 L 672.04043,462.87632 C 672.04043,462.87632 729.20053,465.32747 731.31355,408.28265 C 733.42627,351.23788 640.32392,74.48115 640.32411,74.481324 L 139.62208,74.481324 z "
+         style="fill:url(#linearGradient922);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:16.63807297;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="path30" />
+      <path
+         d="M 399.49299,243.40533 L 156.52421,243.40533 C 156.52421,243.40533 112.15612,355.38225 114.2688,393.41203 C 116.38152,431.44186 139.62208,427.21646 139.62208,427.21646 L 399.49299,427.21646 L 399.49299,243.40533 z "
+         style="fill:url(#linearGradient921);fill-opacity:1;fill-rule:evenodd;stroke:#555555;stroke-width:16.63807297;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="path33" />
+      <text
+         x="520.15076"
+         y="120.12617"
+         style="font-size:7.69969654px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bookman Old Style"
+         id="text49"
+         xml:space="preserve"><tspan
+           x="520.15076"
+           y="120.12617"
+           id="tspan945">Dec 29, 2004 - The Inkscape </tspan><tspan
+           x="520.15076"
+           y="128.59583"
+           id="tspan947">developers have set a goal</tspan><tspan
+           x="520.15076"
+           y="137.06551"
+           id="tspan949">for the release of Inkscape 0.41 </tspan><tspan
+           x="520.15076"
+           y="145.53517"
+           id="tspan951">for mid-late January. There are </tspan><tspan
+           x="520.15076"
+           y="154.00484"
+           id="tspan953">some noteworthy new features </tspan><tspan
+           x="520.15076"
+           y="162.4745"
+           id="tspan955">that would be worth getting out </tspan><tspan
+           x="520.15076"
+           y="170.94417"
+           id="tspan957">to users, and with some major </tspan><tspan
+           x="520.15076"
+           y="179.41383"
+           id="tspan959">internal changes that will be </tspan><tspan
+           x="520.15076"
+           y="187.8835"
+           id="tspan961">taking place soon, a good stable </tspan><tspan
+           x="520.15076"
+           y="196.35316"
+           id="tspan963">release is needed prior to starting </tspan><tspan
+           x="520.15076"
+           y="204.82283"
+           id="tspan965">such an undertaking.</tspan></text>
+      <text
+         x="437.09244"
+         y="236.60193"
+         style="font-size:16.47625923px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;line-height:139.99999762%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bookman Old Style"
+         id="text90"
+         xml:space="preserve"><tspan
+           x="437.09244"
+           y="236.60193"
+           id="tspan923">Dec 29, 2004 - The Inkscape </tspan><tspan
+           x="437.09244"
+           y="259.6687"
+           id="tspan925">developers have set a goal</tspan><tspan
+           x="437.09244"
+           y="282.73544"
+           id="tspan927">for the release of Inkscape 0.41 </tspan><tspan
+           x="437.09244"
+           y="305.80222"
+           id="tspan929">for mid-late January. There are </tspan><tspan
+           x="437.09244"
+           y="328.86899"
+           id="tspan931">some noteworthy new features </tspan><tspan
+           x="437.09244"
+           y="351.93573"
+           id="tspan933">that would be worth getting out </tspan><tspan
+           x="437.09244"
+           y="375.0025"
+           id="tspan935">to users, and with some major </tspan><tspan
+           x="437.09244"
+           y="398.06927"
+           id="tspan937">internal changes that will be </tspan><tspan
+           x="437.09244"
+           y="421.13602"
+           id="tspan939">taking place soon, a good stable </tspan><tspan
+           x="437.09244"
+           y="444.20279"
+           id="tspan941">release is needed prior to starting </tspan><tspan
+           x="437.09244"
+           y="467.26956"
+           id="tspan943">such an undertaking.</tspan></text>
+      <g
+         transform="matrix(16.63807,0,0,16.63807,-5850.082,-8590.836)"
+         id="g466">
+        <text
+           x="503.93686"
+           y="528.50177"
+           transform="matrix(1,0,-0.273892,1,0,0)"
+           style="font-size:7.19524765px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text46"
+           xml:space="preserve"><tspan
+             x="503.93686"
+             y="528.50177"
+             style="letter-spacing:-0.82717609;font-family:Bitstream Vera Sans"
+             id="tspan47">N</tspan></text>
+        <text
+           x="437.3074"
+           y="528.50177"
+           transform="matrix(1,0,-0.136946,1,0,0)"
+           style="font-size:7.19524765px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text460"
+           xml:space="preserve"><tspan
+             x="437.3074"
+             y="528.50177"
+             style="letter-spacing:-0.82717609;font-family:Bitstream Vera Sans"
+             id="tspan461">E</tspan></text>
+        <text
+           x="370.13919"
+           y="528.3999"
+           style="font-size:7.19524765px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           id="text463"
+           xml:space="preserve"><tspan
+             x="370.13919"
+             y="528.3999"
+             style="letter-spacing:-0.82717609;font-family:Bitstream Vera Sans"
+             id="tspan464">WS</tspan></text>
+      </g>
+      <rect
+         width="663.99811"
+         height="53.408539"
+         x="53.002834"
+         y="182.53934"
+         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:block"
+         id="rect620" />
+    </g>
+  </g>
+</svg>
