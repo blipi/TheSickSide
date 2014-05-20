@@ -60,6 +60,10 @@
 	</head>
 
 	<body data-baseurl="{$base_url}" data-language="{$current_language}" data-module="{$current_module}" >
+		
+		<div id="header_background"></div>
+		<div id="header_album"><img src="{$base_url}style/images/inlay_exterior.png" /></div>
+		
 		<div id='languageBar'>
 			<img src="{$base_url}style/images/cat.png" onclick="_.Site.changeLang('cat');" alt="Català" />
 			<img src="{$base_url}style/images/eses.png" onclick="_.Site.changeLang('esp');" alt="Castellano" />
@@ -97,8 +101,11 @@
 				<div class="menu_item menu_biography"><a href="{$base_url}{$redirects['biography']}/">{lang('menu_biography')}</a></div>
 				<div class="menu_item menu_contact" ><a href="{$base_url}{$redirects['contact']}/">{lang('menu_contact_us')}</a></div>
 			</div>
-					
-			<img id="logo" src="{$base_url}style/images/vinyl.png" alt="The Sick Side" />
+			
+			<div id="logo">	
+				<img id="vinyl" src="{$base_url}style/images/vinyl.png" alt="The Sick Side" />
+				<img id="sublogo" src="{$base_url}style/images/BornToKill.png" alt="The Sick Side - Born To Kill" />
+			</div>
 		</div>
 		
 		<div id="content">

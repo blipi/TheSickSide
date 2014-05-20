@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-03-10 01:36:29
+<?php /* Smarty version Smarty-3.1.14, created on 2014-05-20 18:57:13
          compiled from "application\views\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:64255252ac8009d729-45680374%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '495fc432b3fd34d1f582d189e758c35b360a4790' => 
     array (
       0 => 'application\\views\\templates\\header.tpl',
-      1 => 1394411788,
+      1 => 1400605020,
       2 => 'file',
     ),
   ),
@@ -124,6 +124,11 @@ $_smarty_tpl->tpl_vars['script']->_loop = true;
 " data-language="<?php echo $_smarty_tpl->tpl_vars['current_language']->value;?>
 " data-module="<?php echo $_smarty_tpl->tpl_vars['current_module']->value;?>
 " >
+		
+		<div id="header_background"></div>
+		<div id="header_album"><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+style/images/inlay_exterior.png" /></div>
+		
 		<div id='languageBar'>
 			<img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 style/images/cat.png" onclick="_.Site.changeLang('cat');" alt="Català" />
@@ -182,9 +187,13 @@ style/images/en.png" onclick="_.Site.changeLang('eng');" alt="English" />
 /"><?php echo lang('menu_contact_us');?>
 </a></div>
 			</div>
-					
-			<img id="logo" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+			
+			<div id="logo">	
+				<img id="vinyl" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 style/images/vinyl.png" alt="The Sick Side" />
+				<img id="sublogo" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+style/images/BornToKill.png" alt="The Sick Side - Born To Kill" />
+			</div>
 		</div>
 		
 		<div id="content">

@@ -27,7 +27,7 @@ class News extends CI_Controller
 		client_lang('news');
 		
 		$this->load->database();
-		$news = $this->db->query('SELECT * FROM `news`')->result();
+		$news = $this->db->query('SELECT * FROM `news` ORDER BY `id` DESC LIMIT 10')->result();
 		
 		$lang = $this->user->getLanguage();
 		

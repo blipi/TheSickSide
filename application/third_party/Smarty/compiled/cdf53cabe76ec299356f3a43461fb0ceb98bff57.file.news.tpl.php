@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-02-27 22:56:40
+<?php /* Smarty version Smarty-3.1.14, created on 2014-05-20 00:19:25
          compiled from "application\modules\news\templates\news.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3398530e6bdc02bfa1-29972472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cdf53cabe76ec299356f3a43461fb0ceb98bff57' => 
     array (
       0 => 'application\\modules\\news\\templates\\news.tpl',
-      1 => 1393538199,
+      1 => 1400537964,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'news' => 0,
+    'base_url' => 0,
     'news_item' => 0,
   ),
   'has_nocache_code' => false,
@@ -30,8 +31,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['news_item']->key => $_smarty_tpl->tpl
 $_smarty_tpl->tpl_vars['news_item']->_loop = true;
 ?>
 	<section>
-		<h2><?php echo $_smarty_tpl->tpl_vars['news_item']->value->title;?>
+		<div class="news_bullet"><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+style/images/news_bullet.png" /></div>
+		<h2 class="news_title"><?php echo $_smarty_tpl->tpl_vars['news_item']->value->title;?>
 </h2>
+		<hr />
 		<article>
 			<?php echo $_smarty_tpl->tpl_vars['news_item']->value->text;?>
 
